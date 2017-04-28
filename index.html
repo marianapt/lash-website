@@ -1,33 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-    <title>Rotary International</title>
-    <link rel="stylesheet" href="css/css-reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+
+
+
 <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!--header section -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+                <a class="navbar-brand" href="#"><img src="img/01.png" style="  height:60px; width:60px;" </a>
+            </div>
+            <!-- menu section -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul style="display: inline;"class="nav navbar-nav navbar-right">
+                    <li><a href="# ">Home</a></li>
+                    <li><a href="# ">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <h1> <img style="margin-left:50px; margin-top:50px;float:left; width:120px; height: 130px;"src="img/01.png"> </h1><br>
     <header>
+        <div id="nav"><br>
+            <div id="nav_wrapper"><br>
+                <ul>
+                    <li> <a href="#">home </a></li>
+                    <li> <a href="#">contact</a></li>
+                    <li> <a href="#">about us</a></li>
+                    <li> <a href="#">products</a></li>
+                    <li> <a href="#">services</a></li>
+                </ul> -->
+
+<div class="hero">
+    <h1 style="color: #004080; font-family: Georgia;  text-align: center; padding-top: 150px; font-size:80px;"> Simple benefits directly to you.</h1>
+
+    </div>
 
     </header>
 
 
-    <footer >
-        <!-- Rotary International -->
-        </footer>
+
+    <div class="container">
+
+        <ul class="flex-container">
+            <li class="flex-item" id="one"> <img src="img/car.png" alt="Mountain View" style="width:100%;height:100%; ">
+                <li class="flex-item" id="two"> <img src="img/elder.png" alt="Mountain View" style="width:100%;height:100%; " </li>
+
+                    <li class="flex-item" id="four"> <img src="img/benefits.png" alt="Mountain View" style="width:100%;height:100%; " </li>
+                        <li class="flex-item" id="five"> <img src="img/health.png" alt="Mountain View" style="width:100%;height:100%; " </li>
+                            <li class="flex-item" id="six"> <img src="img/house.png" alt="Mountain View" style="width:100%;height:100%; " </li>
+        </ul>
+    </div>
+    </main>
 
 
-<!--  jquery is the gasonline -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <!-- this is my java script link  -->
- <script type="text/javascript" src="path/to/js/bootstrap.min.js"></script>
+
+    <div style="color:white; background-color:  #006699" class="jumbotron text-center">
+        <h1>At Jag Direct, we love meeting our clients, our number 1 goal is  making sure you are heard.</h1>
+
+    </div>
+
+    <div class="container2">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="img__wrap">
+                    <img class="img__img" style=" height: 300px; width 190px;" src="img/car.jpeg" />
+                    <p class="img__description">Car insurance.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img__wrap">
+                    <img class="img__img" style=" height: 300px; width 200px;" src="img/family.jpeg" />
+                    <p class="img__description">Home insurance.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="img__wrap">
+                    <img class="img__img" style=" height: 300px; width 200px;" src="img/employee.jpeg" />
+                    <p class="img__description">employee benefits .</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+
+
+
+    <!-- JQuery CDN script, always before JS since it cascades -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <!-- HERE ARE MY BOOTSTRAP LINKS  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- this is my java script link  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
+
+
+
+
+
 
 
 </html>

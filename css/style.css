@@ -1,1 +1,211 @@
-body {background-color: pink;}
+body {
+    font-size: 18px;
+    font font-family: arial;
+
+}
+
+.hero{   width: 700;
+  height: 700px;
+  background-image: url("/mountain.jpg");
+  background-size: cover;
+  margin-top: -24px;
+}
+/*
+#nav {
+    width: 700;
+    height: 700px;
+    background-image: url("/mountain.jpg");
+    background-size: cover;
+
+}
+
+#nav_wrapper {
+    height: 70px;
+    width: 650px;
+    background-color: 	#0066ff;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    opacity: 0.7;
+    filter:aplha (opacity=70); /*IE8 earlier
+
+}
+
+#nav_wrapper ul li {display: inline;
+list-style: none;
+font-weight: bold;
+padding: 10px;}
+
+
+#nav_wrapper a{ color: white;
+text-decoration: none;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+#nav_wrapper ul li:hover{ width: auto;
+  height: 50px;
+  background: red;
+  transition:all 0.45s;
+}
+
+*/
+.navbar {
+     background-image: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5);
+     background-repeat: no-repeat;
+     border-bottom: 0px solid #178ACC;
+     box-shadow: 0px 1px 10px white;
+     font-weight: bold;
+     font-size: 18px;
+     width: 100%;
+     height: 85px;
+     margin-top: 0;
+}
+
+.navbar-default {
+     background-color: #2FA4E7;
+     border-color: #1995DC;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus ,
+.navbar-default .navbar-nav > li > a {
+     color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+     color: #FFF;
+     background-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #178ACC;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+/* this is my jag direct image*/
+h1{ text-align: center;
+
+}
+
+
+
+
+
+/*HERE ARE MY ICOSN*/
+
+
+
+
+.flex-container {
+  margin-top: 150px;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 50px;
+
+
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {border-radius: 50%;
+	width: 200px;
+	height: 200px;
+  background:#99ebff;
+  padding: 5px;
+
+  margin-top: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;}
+
+
+
+
+
+
+  .img__wrap {
+  position: relative;
+  height: 320px;
+  width: 500px;
+
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+ .container2{width: 100%;}
+ @media only screen and (max-width: 500px) {
+     #nav {  width: 100%auto;;
+       height: 600px;
+       background-image: url("/mountain.jpg");
+       background-size: cover;
+
+   }
+
+   #nav_wrapper {
+       height: 100px;
+       width:200px;
+       background-color: 	#0066ff;
+       margin-top: 100px;
+       margin-right: auto;
+       margin-left: auto;
+       margin-bottom: 100px;
+       opacity: 0.7;
+       filter:aplha (opacity=70); /*IE8 earlier */
+
+   }
+
+   #nav_wrapper ul li {display: inline;
+   list-style: none;
+   font-weight: bold;
+   padding: 5px;}
+
+
+   #nav_wrapper a{ color: white;
+   text-decoration: none;
+   padding: 10px;
+   margin-bottom: 20px;
+   }
+
+   #nav_wrapper ul li:hover{ width: auto;
+     height: 50px;
+     background: red;
+     transition:all 0.45s;
+   }
+
+
+     }
+ }
