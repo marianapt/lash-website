@@ -1,211 +1,65 @@
-body {
-    font-size: 18px;
-    font font-family: arial;
 
-}
-
-.hero{   width: 700;
-  height: 700px;
-  background-image: url("/mountain.jpg");
-  background-size: cover;
-  margin-top: -24px;
-}
-/*
-#nav {
-    width: 700;
-    height: 700px;
-    background-image: url("/mountain.jpg");
-    background-size: cover;
-
-}
-
-#nav_wrapper {
-    height: 70px;
-    width: 650px;
-    background-color: 	#0066ff;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 100px;
-    opacity: 0.7;
-    filter:aplha (opacity=70); /*IE8 earlier
-
-}
-
-#nav_wrapper ul li {display: inline;
-list-style: none;
-font-weight: bold;
-padding: 10px;}
-
-
-#nav_wrapper a{ color: white;
-text-decoration: none;
-padding: 20px;
-margin-bottom: 20px;
-}
-
-#nav_wrapper ul li:hover{ width: auto;
-  height: 50px;
-  background: red;
-  transition:all 0.45s;
-}
-
-*/
-.navbar {
-     background-image: linear-gradient(#54B4EB, #2FA4E7 60%, #1D9CE5);
-     background-repeat: no-repeat;
-     border-bottom: 0px solid #178ACC;
-     box-shadow: 0px 1px 10px white;
-     font-weight: bold;
-     font-size: 18px;
-     width: 100%;
-     height: 85px;
-     margin-top: 0;
-}
-
-.navbar-default {
-     background-color: #2FA4E7;
-     border-color: #1995DC;
-}
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus ,
-.navbar-default .navbar-nav > li > a {
-     color: #FFF;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-     color: #FFF;
-     background-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #178ACC;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
-
-/* this is my jag direct image*/
-h1{ text-align: center;
-
-}
-
-
-
-
-
-/*HERE ARE MY ICOSN*/
-
-
-
-
-.flex-container {
-  margin-top: 150px;
-  padding: 10px;
+body, html {
+  height: 100%;
   margin: 0;
-  list-style: none;
-  margin-bottom: 50px;
-
-
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-.flex-item {border-radius: 50%;
-	width: 200px;
-	height: 200px;
-  background:#99ebff;
-  padding: 5px;
-
-  margin-top: 10px;
-
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;}
-
-
-
-
-
-
-  .img__wrap {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  height: 320px;
-  width: 500px;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
+.bgimg-1 {
+  background-image: url("../bed.jpeg");
+  min-height: 100%;
+}
 
-.img__description {
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("eyelash.jpg");
+  min-height: 400px;
+}
+.caption {
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 1;
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
- .container2{width: 100%;}
- @media only screen and (max-width: 500px) {
-     #nav {  width: 100%auto;;
-       height: 600px;
-       background-image: url("/mountain.jpg");
-       background-size: cover;
 
-   }
-
-   #nav_wrapper {
-       height: 100px;
-       width:200px;
-       background-color: 	#0066ff;
-       margin-top: 100px;
-       margin-right: auto;
-       margin-left: auto;
-       margin-bottom: 100px;
-       opacity: 0.7;
-       filter:aplha (opacity=70); /*IE8 earlier */
-
-   }
-
-   #nav_wrapper ul li {display: inline;
-   list-style: none;
-   font-weight: bold;
-   padding: 5px;}
-
-
-   #nav_wrapper a{ color: white;
-   text-decoration: none;
-   padding: 10px;
-   margin-bottom: 20px;
-   }
-
-   #nav_wrapper ul li:hover{ width: auto;
-     height: 50px;
-     background: red;
-     transition:all 0.45s;
-   }
-
-
-     }
- }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
